@@ -14,7 +14,7 @@ Note: `You must have permissions to create shared drive in your account. This do
 
 ### Easy and Automatic Way
 
-* Open https://generator.driveindex.ga
+* Open https://bdi-generator.hashhackers.com/
 * Authenticate
 * Generate Code
 * Copy values from `client_id: '', client_secret: '', refresh_token: ''`.
