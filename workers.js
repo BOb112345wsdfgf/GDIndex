@@ -97,7 +97,7 @@ var html = `
                                         </div>
                                         <br />
                                         <center>
-                                            <button type="submit" class="btn btn-primary">Submit</button> <a class="btn btn-info" href="https://gitlab.com/ParveenBhadooOfficial" role="button">Credits</a></center>
+                                            <button type="submit" class="btn btn-primary">Submit</button> <a class="btn btn-info" href="https://gitlab.com/ParveenBhadooOfficial/create-google-shared-drive" role="button">Credits</a></center>
 
                                     </form>
                                     <center><p id="status"></p></center>
