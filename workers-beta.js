@@ -1030,3 +1030,9 @@ class hCaptcha {
         return ret.join("&");
     }
 }
+
+function getRandomInteger(min, max){
+    let rndchoice = Math.floor(Math.random() * Math.floor(max)) + (min-1);
+    console.log(rndchoice);
+    return rndchoice;
+}
