@@ -8,7 +8,7 @@
 </div>
 
 
-## Get Required Data from 
+## Get Required Data from
 
 Note: `You must have permissions to create shared drive in your account. This doesn't work with GMAIL Accounts, Required Gsuite Business+ Accounts. To check Open Google Drive and try to create Shared Drive first.`
 
@@ -85,4 +85,6 @@ Note: Replace `example.com` here with your own domain name.
 * Source: [yyuueexxiinngg](https://github.com/yyuueexxiinngg/some-scripts/blob/master/workers/google/drive/create-share-teamdrive.js)
 * Special Thanks: [donwa](https://github.com/donwa/goindex)
 * Another Thanks: [Sumit Bot](https://t.me/isumitbot)
+* Another Thanks: [MSGSuite](https://github.com/MsGsuite/Shared-Drives-Creator-Website)
+* Another Thanks: [lvyelanshan](https://telegram.dog/lvyelanshan_share)
 * CDN used: [jsDelivr](https://jsdelivr.com)

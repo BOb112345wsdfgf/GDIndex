@@ -18,7 +18,7 @@ var authConfig = {
 };
 
 const botToken = ""; // Telegram Bot Token, add Bot in Below chat to make it work.
-const chatId = ""; //eg. -1001189871478
+const chatId = "-100XXXXXXXXX"; //eg. -1001189871478
 const tdhostid = ""; //website name to display in TG Message
 
 var gd;
@@ -472,7 +472,7 @@ async function getAssetFromKV(event){
 }
 const verify = async event => {
   const cookieHeader = event.request.headers.get('Cookie')
-  
+
   if (cookieHeader && cookieHeader.includes(cookieKey)) {
     // cookieHeader.includes(cookieKey)
     // throw new Error(getCookie(cookieHeader,cookieKey))
@@ -567,11 +567,11 @@ async function loginHandleRequest(event) {
     }
 
     if (url.pathname === '/logout') {
-  
+
       let redirectHeaders = new Headers()
       redirectHeaders.set('Location', `${auth0.domain}/v2/logout?client_id=${auth0.clientId}&returnTo=${auth0.logoutUrl}`)
       redirectHeaders.set('Set-cookie', `${cookieKey}=""; HttpOnly; Secure; SameSite=Lax;`)
-      
+
       return new Response('', {
           status: 302,
           headers: redirectHeaders
