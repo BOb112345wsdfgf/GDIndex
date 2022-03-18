@@ -35,7 +35,7 @@ var today;
 var html = `<html lang="us-en">
    <head>
       <meta charset="utf-8">
-      <title>TD Generator by Hash Hackers</title>
+      <title>Temp TD by Hash Hackers</title>
       <meta name="robots" content="noindex">
       <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/icons/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/icons/favicon-32x32.png">
@@ -114,7 +114,7 @@ var html = `<html lang="us-en">
                               </select>
                            </div>
                            <div class="form-group">
-                              <div class="h-captcha" data-sitekey="`+ hCaptchaConfig.sitekey +`" data-theme="dark"></div>
+                              <div class="h-captcha" data-sitekey="0d643af9-bcde-47de-b86c-94b1c4269aa0" data-theme="dark"></div>
                            </div>
                            <div class="form-check" style="display:none;">
                               <input type="checkbox" class="form-check-input" id="customTheme" value="" />
@@ -140,7 +140,7 @@ var html = `<html lang="us-en">
                         </form>
                         <br>
                         <center>
-                           <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ftemp-td.hashhackers.com&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a><br>
+                           <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ftd.hashhackers.win&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a><br>
                            <br>
                            <p style="font-size:80%;">&copy; 2022 Hash Hackers, All Rights Reserved. Based on Open Source Softwares, <a href="https://gitlab.com/ParveenBhadooOfficial/create-google-shared-drive" target="_blank">S1</a> and <a href="https://github.com/MsGsuite/Shared-Drives-Creator-Website" target="_blank">S2</a>.</p>
                         </center>
@@ -178,23 +178,23 @@ var html = `<html lang="us-en">
                     $("input[name=teamDriveTheme]")[0].click();
                 }
             });
-            $.get("https://temp-td-api.hashhackers.com/teamDriveThemes", function(json) {
+            $.get("/teamDriveThemes", function(json) {
                         teamDriveThemes = json.teamDriveThemes;
                         $.each(json.teamDriveThemes, function(i, item) {
-                                    $("#teamDriveThemeOptions").append(`
+                                    $("#teamDriveThemeOptions").append(\`
                 <div class="form-check">
                    <input
                     class="form-check-input"
                     type="radio"
                     name="teamDriveTheme"
-                    id="teamDriveThemeOption-${item.id}"
-                    value="${item.id}"
+                    id="teamDriveThemeOption-\${item.id}"
+                    value="\${item.id}"
                   />
-                  <label class="form-check-label" for="teamDriveThemeOption-${item.id}">
-                   ${item.id}
+                  <label class="form-check-label" for="teamDriveThemeOption-\${item.id}">
+                   \${item.id}
                   </label>
                 </div>
-                `);
+                \`);
               });
               $("input[name=teamDriveTheme]").change(function() {
                 var themeId = this.value;
@@ -205,16 +205,16 @@ var html = `<html lang="us-en">
                     return t.id == themeId;
                   });
                   $("#teamDriveThemePreview").html(
-                    `
-                  <div class="card" style="background-color: ${theme.colorRgb}">
-                    <img src="${theme.backgroundImageLink}" class="card-img-top" alt="${theme.id}" />
+                    \`
+                  <div class="card" style="background-color: \${theme.colorRgb}">
+                    <img src="\${theme.backgroundImageLink}" class="card-img-top" alt="\${theme.id}" />
                     <div class="card-body">
                       <h5 class="card-text" style="color: white">
-                        ${theme.id}
+                        \${theme.id}
                       </h5>
                     </div>
                   </div>
-              `
+              \`
                   );
                 }
               });
@@ -223,7 +223,7 @@ var html = `<html lang="us-en">
                 $("#loadMe").modal("show");
                 $.ajax({
                   type: "POST",
-                  url: "https://temp-td-api.hashhackers.com/drive",
+                  url: "/drive",
                   data: JSON.stringify({
                     teamDriveName: $("input[id=teamDriveName]").val(),
                     teamDriveThemeId: $("input[name=teamDriveTheme]:checked").val(),
