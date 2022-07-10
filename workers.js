@@ -9,9 +9,9 @@ const auth0 = {
 var authConfig = {
   version: "1.0.1-fix1",
   dailyLimit: false, // Whether to limit each mailbox to submit requests only once a day
-  client_id: '746239575955-oao9hkv614p8glrqpvuh5i8mqfoq145b.apps.googleusercontent.com', // Google Client ID
-  client_secret: 'u5a1CSY5pNjdD2tGTU93TTnI', // Google Client Secret
-  refresh_token: '', // Refresh token
+  client_id: '746239575955-c4d2o1ahg4ts6ahm3a5lh5lp9g8m15h4.apps.googleusercontent.com', // Google Client ID
+  client_secret: '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', // Google Client Secret
+  refresh_token: '1//0gN5fOOUjxjwqCgYIARAAGBASNwF-L9IrkCNgcIJl44PLWFkCDe6J8eY0QQogrUe2nwmQXGJRp1MnqapypqHS1JX9UWGrh0Y41VM', // Refresh token
   domain: "", // Organization name to display
   black_list: ["example@gmail.com"],
   enable_auth0_com: false
